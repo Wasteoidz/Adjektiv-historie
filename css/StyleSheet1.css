@@ -4,15 +4,69 @@
     padding:0;
 }
 
-body
-{
-
+#wrapper {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: row;
+    z-index:1;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
 }
 
 #background-video {
-    user-select:none;
+    position:fixed;
     width:100vw;
-    z-index:100;
+    z-index:-1000;
     overflow:hidden;
     height: 100vh;
 }
+
+#bookClosed {
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    
+}
+
+#bookOpen {
+    visibility: hidden;
+    font-family: 'Dancing Script', cursive;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background: url("../bilder/openBook.png");
+    background-size:cover;
+    height:576px;
+    width:828px;
+    opacity:1;
+}
+
+#left {
+    width:100%;
+    height:100%;
+    padding:40px 20px 40px 60px;
+
+}
+
+
+#right {
+    widows: 100%;
+    height:100%;
+    padding:40px 38px 40px 20px;
+}
+
+.left-number {
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+.right-number {
+    position:absolute;
+    bottom:0;
+    right:0;
+    align-self:flex-end;
+}   
