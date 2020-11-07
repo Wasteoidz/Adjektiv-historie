@@ -9,33 +9,24 @@ function spawnWords() {
 function bookOpen() { return bookstate = true; }
 
 
-//Drag + drop secion
+
 function allowDrop(ev) {
     ev.preventDefault();
-}
-
-function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.querySelectorAll('.word'));
-    console.log(ev + "drag");
-}
-
-function drop(ev) {
+  }
+  
+  function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+  }
+  
+  function drop(ev) {
     ev.preventDefault();
     var data = ev.dataTransfer.getData("text");
-    console.log(data);
-    if (ev.currentTarget5('empty').length > 0) {
-        //   console.log(ev.currentTarget + ' | ev current target')
-        //   console.log(ev.target + ' | ev target ')
-        console.log(data);
-    } else {
-        // console.log(ev.currentTarget + ' | event. current target')
-        // console.log(ev.target + ' | event.target ')
+    ev.target.appendChild(document.getElementById(data));
+  }
 
-        // console.log(ev.target.id)
-        ev.target.append(document.getElementById(data));
-        console.log(data);
-    }
-}
+
+
+
 
 function randomWords() {
     return wrapper.innerHTML = `
@@ -64,3 +55,31 @@ function randomWords() {
                                 <br/> <div id="random" onclick="randomWords()"><img id="randomBilde"  src="bilder/terning.png"/></div>
                             `;
 }
+
+//Drag + drop secion
+// function allowDrop(ev) {
+//     ev.preventDefault();
+// }
+
+// function drag(ev) {
+//     ev.dataTransfer.setData("text", ev.target.querySelectorAll('.word'));
+//     console.log(ev + "drag");
+// }
+
+// function drop(ev) {
+//     ev.preventDefault();
+//     var data = ev.dataTransfer.getData("text");
+//     console.log(data);
+//     if (ev.currentTarget5('empty').length > 0) {
+//         //   console.log(ev.currentTarget + ' | ev current target')
+//         //   console.log(ev.target + ' | ev target ')
+//         console.log(data);
+//     } else {
+//         // console.log(ev.currentTarget + ' | event. current target')
+//         // console.log(ev.target + ' | event.target ')
+
+//         // console.log(ev.target.id)
+//         ev.target.append(document.getElementById(data));
+//         console.log(data);
+//     }
+// }
