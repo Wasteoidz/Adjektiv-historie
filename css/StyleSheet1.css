@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+body {
+    background-image: url("../bilder/bookshelf.jpg");
+    overflow: hidden;
+    background-size: cover;
+}
+
 #wrapper {
     width: 100vw;
     height: 100vh;
@@ -29,6 +35,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    animation: openbook 3s ease;
 }
 
 #bookOpen {
@@ -42,6 +49,7 @@
     opacity: 1;
     word-wrap: break-word;
     user-select: none;
+    animation: openbook 3s ease;
 }
 
 #left {
@@ -77,8 +85,9 @@
     align-self: flex-end;
 }
 
-#bokKnapp {
+#knapp {
     height: 70px;
+    animation: buttons 3s ease;
     width: 70px;
 }
 
@@ -106,4 +115,30 @@
 
 .empty {
     background: rgb(150, 0, 0);
+}
+
+#random {
+    animation: buttons 3s ease;
+}
+
+@keyframes openbook {
+    0% {
+        opacity: 0;
+        transform: translateY(900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttons {
+    0% {
+        opacity: 0;
+        transform: translateX(900px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
