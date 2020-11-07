@@ -35,7 +35,6 @@ function updateView() {
                                     <span id="ord25" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord26" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord27" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span>
                                     <span id="ord28" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord29" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord30" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span>
                                     <span id="ord31" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord32" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord33" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span>
-
                                 </div>
                             </div>
                             </div>
