@@ -1,6 +1,7 @@
 // view
 
 function updateView() {
+
     if (bookstate) {
         wrapper.innerHTML = `  
                                     <div id="background-video">
@@ -37,12 +38,12 @@ function updateView() {
                                     <span id="ord28" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord29" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord30" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span>
                                     <span id="ord31" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord32" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span><span id="ord33" class="word" ondragstart="drag(event)" draggable="true">${ spawnWords() }</span>
                                 </div>
-                            </div>
-                            </div>
-                            </div>
-                            </div>
-                            <div id="ordKnapp" onclick="newWords()"><img id="knapp"src="bilder/bokKnapp.png"/></div>
-                            <br/> <div id="random" onclick="randomWords()"><img id="randomBilde"  src="bilder/terning.png"/></div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                <div id="ordKnapp" onclick="newWords()"><img id="knapp"src="bilder/bokKnapp.png"/></div>
+                                <br/> <div id="random" onclick="randomWords()"><img id="randomBilde"  src="bilder/terning.png"/></div>
                             `;
     } else {
         wrapper.innerHTML = `
